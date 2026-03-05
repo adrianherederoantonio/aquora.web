@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aquora | Federación de Waterpolo</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" role="banner">
+        <div class="container nav-container">
+            <div class="logo" role="img" aria-label="Logo de Aquora">
+                <img style="height: 75px;" src="assets/img/aquora.png" alt="Aquora Logo" />
+            </div>
+
+            <nav role="navigation" aria-label="Menú principal">
+                <ul class="nav-links">
+                    <li>
+                        <button class="nav-link" id="inicio-button" data-route="inicio" type="button">
+                            Inicio
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-link" id="federacion-button" data-route="federacion" type="button">
+                            Federación
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-link" id="docu-button" data-route="documentos" type="button">
+                            Programas
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-link" id="teoria-button" data-route="teoria" type="button">
+                            Teoría
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#inscripcion" class="btn-primary nav-link" data-route="inscripcion">Inscribirse</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIONES como views SPA -->
+    <main id="content" role="main">
+    <!--Aqui se carga el contenido desde nav.js-->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto" data-view="contacto" role="contentinfo" tabindex="-1" aria-label="Sección contacto">
+        <div class="container footer-container">
+
+            <div class="footer-logo" role="img" aria-label="Logo de Aquora">
+                
+                <div class="footer-logos">
+                    <img src="assets/img/aquora.png" alt="Aquora Logo" />
+                    <img src="assets/img/txurdi.png" alt="Txurdi Logo" />
+                </div>
+
+                <p>© 2025 Aquora - Federación de Waterpolo</p>
+                
+            </div>
+
+            <nav class="footer-links" role="navigation" aria-label="Navegación pie de página">
+                <ul>
+                    <li><a href="#" class="nav-link" data-route="">Volver arriba</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-social" aria-label="Redes sociales">
+                <a href="#" target="_blank" rel="noopener" class="social-link">Instagram</a>
+                <a href="#" target="_blank" rel="noopener" class="social-link">Twitter</a>
+                <a href="#" target="_blank" rel="noopener" class="social-link">YouTube</a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/js/nav.js"></script>
+    <script src="scripts/js/carrusel.js"></script>
+</body>
+</html>
